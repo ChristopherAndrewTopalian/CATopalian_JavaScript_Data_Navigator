@@ -9,9 +9,35 @@ function makeInterface(whichArray)
 
     let mainDiv = ce('div');
     mainDiv.id = 'mainDiv';
+    //mainDiv.style.display = 'flex';
+    //mainDiv.style.flexDirection = 'column';
     ba(mainDiv);
 
     //-//
+
+    let theTitle = ce('a');
+    theTitle.id = 'theTitle';
+    theTitle.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Data_Navigator';
+    theTitle.target = '_blank';
+    theTitle.textContent = 'CATopalian JavaScript Data Navigator';
+    theTitle.style.fontFamily = 'Arial';
+    theTitle.style.fontSize = '17px';
+    theTitle.style.fontWeight = 'bold';
+    theTitle.style.textAlign = 'left';
+    theTitle.style.lineHeight = 15 + 'px';
+    theTitle.style.textDecoration = 'none';
+    mainDiv.append(theTitle);
+
+    //-//
+
+    mainDiv.append(ce('hr'));
+
+    //-//
+
+    let reportContainer = ce('div');
+    reportContainer.style.display = 'flex';
+    reportContainer.style.flexDirection = 'row';
+    mainDiv.append(reportContainer);
 
     let reportBtn = ce('button');
     reportBtn.textContent = 'Report';
@@ -136,7 +162,7 @@ function makeInterface(whichArray)
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
