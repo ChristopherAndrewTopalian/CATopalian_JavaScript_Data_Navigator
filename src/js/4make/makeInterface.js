@@ -9,8 +9,6 @@ function makeInterface(whichArray)
 
     let mainDiv = ce('div');
     mainDiv.id = 'mainDiv';
-    //mainDiv.style.display = 'flex';
-    //mainDiv.style.flexDirection = 'column';
     ba(mainDiv);
 
     //-//
